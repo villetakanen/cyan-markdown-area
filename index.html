@@ -5,12 +5,18 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + Lit + TS</title>
+    <link rel="stylesheet" href="https://unpkg.com/@11thdeg/cyan@0.33.6/dist/style.css" />
     <link rel="stylesheet" href="./src/index.css" />
-    <script type="module" src="/src/my-element.ts"></script>
+    <script type="module" src="/src/cyan-markdown-area/index.ts"></script>
   </head>
-  <body>
-    <my-element>
-      <h1>Vite + Lit</h1>
-    </my-element>
+  <body class="cyan cyan--themed cyan--mode--dark">
+    <div class="AppLayout">
+      <h1 class="TypeHeadline2">Tester</h1>
+      <main class="bookLayout">
+        <article class="Column">
+          <cn-markdown-area></cn-markdown-area>
+        </article>
+      </main>
+    </div>
   </body>
 </html>
